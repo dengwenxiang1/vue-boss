@@ -7,8 +7,22 @@
 					"navigationBarTextStyle": "white",
 					"navigationBarBackgroundColor": "#df6b51"
 				}
-		}
+		},
+		{
+			"path": "pages/register/index",
+			"style": {
+				"navigationBarTitleText": "Boss直聘",
+				"navigationBarTextStyle": "white",
+				"navigationBarBackgroundColor": "#df6b51"
+			}
+	}
 	],
+	"easycom": {
+		"autoscan": true,
+		"custom": {
+			"^uni-(.*)": "@dcloudio/uni-ui/lib/uni-$1/uni-$1.vue"
+		}
+	},
 	"globalStyle": {
 		"navigationBarTextStyle": "black",
 		"navigationBarBackgroundColor": "#F8F8F8",

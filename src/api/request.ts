@@ -13,13 +13,7 @@ export const ajax=(url:string,data?:{},type="GET")=>{
         method:type==='GET'?'GET':'POST',
         data:data,
         success(res){
-            console.log(res)
-            return resolve({
-                ok:true,
-                status:res.statusCode,
-                text:async () => JSON.stringify(res.data),
-                json:async () => res.data
-            } as Response);  
+            return resolve(res.data as Response);  
         },
         fail(err){
             console.log(err)
