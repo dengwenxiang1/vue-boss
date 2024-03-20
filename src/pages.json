@@ -1,6 +1,5 @@
 {
-	"pages": [ //pages数组中第一项表示应用启动页，参考：https://uniapp.dcloud.io/collocation/pages
-		{
+	"pages": [{
 				"path": "pages/login/index",
 				"style": {
 					"navigationBarTitleText": "Boss直聘",
@@ -15,7 +14,22 @@
 				"navigationBarTextStyle": "white",
 				"navigationBarBackgroundColor": "#df6b51"
 			}
-	}
+	     },
+		 {
+			"path": "pages/dasheninfo/index",
+			"style": {
+				"navigationBarTitleText": "大神信息完善",
+				"navigationBarTextStyle": "white",
+				"navigationBarBackgroundColor": "#df6b51"
+			}
+	     },{
+			"path": "pages/bossinfo/index",
+			"style": {
+				"navigationBarTitleText": "老板信息完善",
+				"navigationBarTextStyle": "white",
+				"navigationBarBackgroundColor": "#df6b51"
+			}
+	     }
 	],
 	"easycom": {
 		"autoscan": true,

@@ -55,7 +55,7 @@ class localStorate{
             return null
         }
        }
-       return parseValue
+       return JSON.parse( parseValue)
       }catch(error){
         console.log(error)
       }

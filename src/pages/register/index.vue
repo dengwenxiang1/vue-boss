@@ -17,9 +17,9 @@
       </uni-forms-item>
   </uni-forms>
   <button class="login" @click="submitForm">注册</button>
-   <router-link to="/pages/login/index">
-    <button  @click="submitForm">已有账户</button>
-   </router-link>
+   <navigator url="/pages/login/index">
+    <button>已有账户</button>
+   </navigator>
    </uni-card>
   </view>
 </template>

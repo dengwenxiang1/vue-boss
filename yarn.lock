@@ -44,7 +44,7 @@
     "json5" "^2.2.3"
     "semver" "^6.3.1"
 
-"@babel/generator@^7.20.5", "@babel/generator@^7.23.6":
+"@babel/generator@^7.20.5", "@babel/generator@^7.22.5", "@babel/generator@^7.23.6":
   "integrity" "sha512-qrSfCYxYQB5owCmGLbl8XRpX1ytXlpueOb0N0UmQwA073KZxejgQTzAmJezxvpwQD9uGtK2shHdi55QT+MbjIw=="
   "resolved" "https://registry.npmjs.org/@babel/generator/-/generator-7.23.6.tgz"
   "version" "7.23.6"
@@ -263,7 +263,7 @@
     "chalk" "^2.4.2"
     "js-tokens" "^4.0.0"
 
-"@babel/parser@^7.16.4", "@babel/parser@^7.23.6", "@babel/parser@^7.23.9", "@babel/parser@^7.24.0":
+"@babel/parser@^7.16.4", "@babel/parser@^7.22.5", "@babel/parser@^7.23.6", "@babel/parser@^7.23.9", "@babel/parser@^7.24.0":
   "integrity" "sha512-QuP/FxEAzMSjXygs8v4N9dvdXzEHN4W1oF3PxuWAtPo08UdM17u89RDMgjLn/mlc56iM0HlLmVkO/wgR+rDgHg=="
   "resolved" "https://registry.npmjs.org/@babel/parser/-/parser-7.24.0.tgz"
   "version" "7.24.0"
@@ -952,7 +952,7 @@
     "@babel/parser" "^7.24.0"
     "@babel/types" "^7.24.0"
 
-"@babel/traverse@^7.23.7", "@babel/traverse@^7.24.0":
+"@babel/traverse@^7.22.5", "@babel/traverse@^7.23.7", "@babel/traverse@^7.24.0":
   "integrity" "sha512-HfuJlI8qq3dEDmNU5ChzzpZRWq+oxCZQyMzIMEqLho+AQnhMnKQUzH6ydo3RBl/YjPCuk68Y6s0Gx0AeyULiWw=="
   "resolved" "https://registry.npmjs.org/@babel/traverse/-/traverse-7.24.0.tgz"
   "version" "7.24.0"
@@ -1894,6 +1894,13 @@
   "integrity" "sha512-5+fP8P8MFNC+AyZCDxrB2pkZFPGzqQWUzpSeuuVLvm8VMcorNYavBqoFcxK8bQz4Qsbn4oUEEem4wDLfcysGHA=="
   "resolved" "https://registry.npmjs.org/@types/json-schema/-/json-schema-7.0.15.tgz"
   "version" "7.0.15"
+
+"@types/node@*", "@types/node@^20.11.30", "@types/node@>= 14":
+  "integrity" "sha512-dHM6ZxwlmuZaRmUPfv1p+KrdD1Dci04FbdEm/9wEMouFqxYoFl5aMkt0VMAUtYRQDyYvD41WJLukhq/ha3YuTw=="
+  "resolved" "https://registry.npmjs.org/@types/node/-/node-20.11.30.tgz"
+  "version" "20.11.30"
+  dependencies:
+    "undici-types" "~5.26.4"
 
 "@vitejs/plugin-legacy@^4.0.3":
   "integrity" "sha512-um3gbVouD2Q/g19C0qpDfHwveXDCAHzs8OC3e9g6aXpKoD1H14himgs7wkMnhAynBJy7QqUoZNAXDuqN8zLR2g=="
@@ -3974,6 +3981,11 @@
   "resolved" "https://registry.npmjs.org/typescript/-/typescript-4.9.5.tgz"
   "version" "4.9.5"
 
+"undici-types@~5.26.4":
+  "integrity" "sha512-JlCMO+ehdEIKqlFxk6IfVoAUVmgz7cU7zD/h9XZ0qzeosSHmUJVOzSQvvYSYWXkFXC+IfLKSIffhv0sVZup6pA=="
+  "resolved" "https://registry.npmjs.org/undici-types/-/undici-types-5.26.5.tgz"
+  "version" "5.26.5"
+
 "unicode-canonical-property-names-ecmascript@^2.0.0":
   "integrity" "sha512-yY5PpDlfVIU5+y/BSCxAJRBIS1Zc2dDG3Ujq+sR0U+JjUevW2JhocOF+soROYDSaAezOzOKuyyixhD6mBknSmQ=="
   "resolved" "https://registry.npmjs.org/unicode-canonical-property-names-ecmascript/-/unicode-canonical-property-names-ecmascript-2.0.0.tgz"
@@ -4048,6 +4060,16 @@
   "integrity" "sha512-BNGbWLfd0eUPabhkXUVm0j8uuvREyTh5ovRa/dyow/BqAbZJyC+5fU+IzQOzmAKzYqYRAISoRhdQr3eIZ/PXqg=="
   "resolved" "https://registry.npmjs.org/vary/-/vary-1.1.2.tgz"
   "version" "1.1.2"
+
+"vite-plugin-require-transform@^1.0.21":
+  "integrity" "sha512-A3SrHhVg9tCW35O7E8kcuB71YTEdVd3EaM1zh6gbH4zxy4WzXSfcNf0UiWmaHHhr6wdFhiiAGdpR6S0SUxXkGQ=="
+  "resolved" "https://registry.npmjs.org/vite-plugin-require-transform/-/vite-plugin-require-transform-1.0.21.tgz"
+  "version" "1.0.21"
+  dependencies:
+    "@babel/generator" "^7.22.5"
+    "@babel/parser" "^7.22.5"
+    "@babel/traverse" "^7.22.5"
+    "@babel/types" "^7.22.5"
 
 "vite@^4.0.0", "vite@^4.0.0 || ^5.0.0", "vite@4.1.4":
   "integrity" "sha512-3knk/HsbSTKEin43zHu7jTwYWv81f8kgAL99G5NWBcA1LKvtvcVAC4JjBH1arBunO9kQka+1oGbrMKOjk4ZrBg=="
