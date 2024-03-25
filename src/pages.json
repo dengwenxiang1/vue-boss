@@ -1,5 +1,12 @@
 {
-	"pages": [{
+	"pages": [
+		{
+          "path":"pages/home/index",
+		  "style": {
+			"navigationStyle": "custom"
+		  }
+		},
+		{
 				"path": "pages/login/index",
 				"style": {
 					"navigationBarTitleText": "Boss直聘",
@@ -7,6 +14,20 @@
 					"navigationBarBackgroundColor": "#df6b51"
 				}
 		},
+		{
+			"path": "pages/user/index",
+			"style": {
+				"navigationBarTitleText": "用户中心",
+				"navigationBarTextStyle": "white",
+				"navigationBarBackgroundColor": "#df6b51"
+			  }
+	    },
+		{
+			"path": "pages/massage/index",
+			"style": {
+				"navigationStyle": "custom"
+			  }
+	    },
 		{
 			"path": "pages/register/index",
 			"style": {
@@ -31,6 +52,32 @@
 			}
 	     }
 	],
+	"tabBar": {
+		"color": "#929292",
+		"selectedColor": "red",
+		"backgroundColor": "#ffffff",
+		"borderStyle": "white",
+		"list": [
+		  {
+			"pagePath": "pages/home/index",
+			"iconPath": "static/home.png",
+			"selectedIconPath": "static/home_border.png",
+			"text": "首页"
+		  },
+		  {
+			"pagePath": "pages/massage/index",
+			"iconPath": "static/massage.png",
+			"selectedIconPath": "static/massage_border.png",
+			"text": "消息列表"
+		  },
+		  {
+			"pagePath": "pages/user/index",
+			"iconPath": "static/user.png",
+			"selectedIconPath": "static/user_border.png",
+			"text": "用户中心"
+		  }
+		]
+	  },
 	"easycom": {
 		"autoscan": true,
 		"custom": {

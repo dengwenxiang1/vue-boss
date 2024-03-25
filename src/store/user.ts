@@ -12,8 +12,8 @@ export const useUserStore = defineStore('userInfo', () => {
       const result:any= await reqLogin(username,password)
       if(result.code==0){
         storage.set('userInfo',Object.assign(userInfo,result.data),4000)
-        uni.navigateTo({
-          url:'/'
+        uni.switchTab({
+          url:'/pages/home/index'
         })
       }else{
        toast.error(result.msg)
@@ -50,8 +50,8 @@ export const useUserStore = defineStore('userInfo', () => {
       const result:any= await reqUpdateUser(user)
       if(result.code==0){
         storage.set('userInfo',Object.assign(userInfo,result.data),4000)
-        uni.navigateTo({
-          url:'/'
+        uni.switchTab({
+          url:'/pages/home/index'
         })
       }else{
        toast.error(result.msg)
@@ -63,7 +63,9 @@ export const useUserStore = defineStore('userInfo', () => {
 
   const logOut=()=>{
    storage.remove('userInfo')
-   router.push('/login')
+   uni.navigateTo({
+    url:'/pages/login/index'
+  })
   }
   return { userInfo,LogIn,logOut,register,UdapteUser}
 })
