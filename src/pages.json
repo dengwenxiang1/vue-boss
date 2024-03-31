@@ -25,7 +25,9 @@
 		{
 			"path": "pages/massage/index",
 			"style": {
-				"navigationStyle": "custom"
+				"navigationBarTitleText": "消息列表",
+				"navigationBarTextStyle": "white",
+				"navigationBarBackgroundColor": "#df6b51"
 			  }
 	    },
 		{

@@ -12,3 +12,12 @@ export type userInfo={
     salary?:string,//职位薪资
     header:string
 }
+export type chatMsg={
+    chat_id:string,
+    content:string,
+    create_time:number,
+    from:string,
+    read:boolean,
+    to:string,
+    _id:string
+}
